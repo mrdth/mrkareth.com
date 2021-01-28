@@ -74,14 +74,14 @@
           <div class="flex py-4 mx-2">
             <img src="/img/class_warrior.png" alt="Warrior" class="w-10 h-10 rounded-l md:w-16 md:h-16" />
             <div class="flex flex-grow border border-gray-300">
-              <div class="flex items-center justify-center text-sm bg-green-300 aat-progress md:text-base" id="warrior">
+              <div class="flex items-center justify-center text-sm text-center bg-green-300 aat-progress md:text-base" id="warrior">
               </div>
             </div>
           </div>
           <!-- <div class="flex pt-2 mx-2">
           <img src="/img/class_hunter.png" alt="Hunter" class="w-10 h-10 rounded-l md:w-16 md:h-16" />
           <div class="flex flex-grow border border-gray-300">
-            <div class="flex items-center justify-center text-sm bg-green-300 aat-progress md:text-base" id="hunter"></div>
+            <div class="flex items-center justify-center text-sm text-center bg-green-300 aat-progress md:text-base" id="hunter"></div>
           </div>
         </div> -->
 
@@ -165,7 +165,7 @@
         const el = document.getElementById(wowClass);
         const width = progress[wowClass].current / progress[wowClass].max * 100;
         el.style.width = width.toFixed(2) + "%";
-        el.innerHTML = width.toFixed(2) + "%";
+        el.innerHTML = width.toFixed(2) + `%<br>${progress[wowClass].current} / ${progress[wowClass].max}`;
       }
 
       
