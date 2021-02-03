@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" class="h-screen">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="https://unpkg.com/favicon.ico" />
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography/dist/typography.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/line-clamp/dist/line-clamp.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/aspect-ratio/dist/aspect-ratio.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <style>
+    html {
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
+  <title>MrKareth</title>
+</head>
+
+<body class="h-screen">
+  <div id="app" class="flex items-center justify-center min-h-screen bg-repeat"
+    style="background-image: url('/img/dark-paths.png')">
+    <div class="flex flex-col mx-auto md:w-2/3 xl:w-1/2">
+      <div class="flex items-center ">
+        <div class="flex-grow h-2 bg-yellow-400"></div>
+        <div class="px-4 py-4 text-3xl text-gray-100 md:leading-4 md:text-6xl md:px-8">
+          MrKareth
+        </div>
+        <div class="flex-grow h-2 bg-yellow-400"></div>
+      </div>
+      <div>
+        <div class="p-4 pb-1 mx-auto bg-gray-100 border-2 border-yellow-400 md:p-8 md:pb-1 md:my-24">
+          <!-- Level 60's -->
+          <div class="flex items-center mt-4 ">
+            <div class="flex-grow h-1 ml-4 bg-yellow-400"></div>
+            <div class="px-4 text-2xl leading-4 md:px-8">
+              CLASSES @ 60
+            </div>
+            <div class="flex-grow h-1 mr-4 bg-yellow-400"></div>
+
+          </div>
+          <div>
+            <div class="flex justify-center mt-4">
+              <img src="/img/class_warrior.png" alt="Warrior" class="w-10 h-10 m-1 rounded md:w-16 md:h-16" />
+              <!-- <img src="/img/class_hunter.png" alt="Hunter" class="w-10 h-10 m-1 rounded md:w-16 md:h-16" /> -->
+            </div>
+          </div>
+          <!-- Total Gold -->
+          <div class="flex items-center mt-8">
+            <div class="flex-grow h-1 ml-4 bg-yellow-400"></div>
+            <div class="px-4 text-2xl leading-4 md:px-8">
+              TOTAL GOLD
+            </div>
+            <div class="flex-grow h-1 mr-4 bg-yellow-400"></div>
+
+          </div>
+          <div class="pt-4 mx-auto text-4xl text-center md:text-6xl">
+            7,128,679
+          </div>
+          <!-- ATT Progress -->
+          <div class="flex items-center mt-8">
+            <div class="flex-grow h-1 ml-4 bg-yellow-400"></div>
+            <div class="hidden px-4 text-2xl leading-4 md:block md:px-8">
+              ALL THE THINGS PROGRESS
+            </div>
+            <div class="px-4 text-2xl leading-4 md:hidden md:px-8">
+              ATT PROGRESS
+            </div>
+            <div class="flex-grow h-1 mr-4 bg-yellow-400"></div>
+
+          </div>
+          <div class="flex py-4 mx-2">
+            <img src="/img/class_warrior.png" alt="Warrior" class="w-10 h-10 rounded-l md:w-16 md:h-16" />
+            <div class="flex flex-grow border border-gray-300">
+              <div class="flex items-center justify-center text-sm text-center bg-green-300 aat-progress md:text-base" id="warrior">
+              </div>
+            </div>
+          </div>
+          <!-- <div class="flex pt-2 mx-2">
+          <img src="/img/class_hunter.png" alt="Hunter" class="w-10 h-10 rounded-l md:w-16 md:h-16" />
+          <div class="flex flex-grow border border-gray-300">
+            <div class="flex items-center justify-center text-sm text-center bg-green-300 aat-progress md:text-base" id="hunter"></div>
+          </div>
+        </div> -->
+
+
+          <!-- Nav-->
+          <div class="flex justify-center my-4">
+            <div class="w-8 p-1 mx-1 border border-gray-400 rounded rounded-full">
+              <a href="/archive/1.html" id="first">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd"
+                    d="M15.707 15.707a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 010 1.414zm-6 0a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 1.414L5.414 10l4.293 4.293a1 1 0 010 1.414z"
+                    clipRule="evenodd" />
+                </svg>
+              </a>
+            </div>
+            <div class="w-8 p-1 mx-1 border border-gray-400 rounded rounded-full">
+              <a href="#" id="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd"
+                    d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                    clipRule="evenodd" />
+                </svg>
+              </a>
+            </div>
+
+            <div class="w-1/5"></div>
+
+            <div class="w-8 p-1 mx-1 border border-gray-400 rounded rounded-full">
+              <a href="#" id="next">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd"
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                    clipRule="evenodd" />
+                </svg>
+              </a>
+            </div>
+            <div class="w-8 p-1 mx-1 border border-gray-400 rounded rounded-full">
+              <a href="/index.html" id="last">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd"
+                    d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
+                    clipRule="evenodd" />
+                  <path fillRule="evenodd"
+                    d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
+                    clipRule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="text-center">Updated Wednesdays - last update 2021-01-27</div>
+        </div>
+      </div>
+
+    </div>
+    <script src="/archive.js"></script>
+    <script>
+      const pageNo = 2;
+
+      if (pageNo > 1) {
+        document.getElementById('prev').href = '/archive/' + (pageNo - 1) + '.html';
+      }
+
+      if (pageNo < archiveCount) {
+        document.getElementById('next').href = '/archive/' + (pageNo + 1) + '.html';
+      } else {
+        document.getElementById('next').href = '/index.html';
+      }
+
+      const progress = {
+        warrior: {
+          current: 22935,
+          max: 59574
+        },
+        // hunter: {
+        //   current: 21175,
+        //   max: 55767
+        // },
+      };
+
+      for (const wowClass in progress) {
+        const el = document.getElementById(wowClass);
+        const width = progress[wowClass].current / progress[wowClass].max * 100;
+        el.style.width = width.toFixed(2) + "%";
+        el.innerHTML = width.toFixed(2) + `%<br>${progress[wowClass].current} / ${progress[wowClass].max}`;
+      }
+
+      
+    </script>
+</body>
+
+</html>
