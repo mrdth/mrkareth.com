@@ -1,0 +1,70 @@
+{
+  "lastUpdate": "2021-02-03",
+  "gold": "7,316,155",
+  "sixties": [
+    "warrior",
+    "hunter"
+  ],
+  "progress":  {
+    "warrior": {
+      "colour": "#c79c6e",
+      "current": 25298,
+      "max": 63451
+    },
+    "hunter": {
+      "colour": "#abd473",
+      "current": 23650,
+      "max": 59517
+    },
+    "mage": {
+      "colour": "#40c7eb",
+      "current": 19289,
+      "max": 54272
+    },
+    "druid": {
+      "colour": "#ff7d0a",
+      "current": 19474,
+      "max": 56133
+    },
+    "demonhunter": {
+      "colour": "#a330c9",
+      "current": 18691,
+      "max": 51960
+    },
+    "priest": {
+      "colour": "#efefef",
+      "current": 20443,
+      "max": 56655
+    },
+    "deathknight": {
+      "colour": "#c41f3b",
+      "current": 20382,
+      "max": 57972
+    },
+    "rogue": {
+      "colour": "#fff569",
+      "current": 18212,
+      "max": 53730
+    },
+    "paladin": {
+      "colour": "#f58cba",
+      "current": 20714,
+      "max": 57652
+    },
+    "monk": {
+      "colour": "#00ff96",
+      "current": 17801,
+      "max": 52667
+    },
+    "shaman": {
+      "colour": "#0070de",
+      "current": 19650,
+      "max": 56304
+    },
+    "warlock": {
+      "colour": "#8787ed",
+      "current": 17599,
+      "max": 51329
+    }
+  }
+}

@@ -15,6 +15,11 @@
     html {
       font-family: 'Lato', sans-serif;
     }
+
+    .aat-progress {
+      width: 0%;
+      /* transition: width .5s; */
+    }
   </style>
   <title>MrKareth</title>
 </head>
@@ -42,9 +47,8 @@
 
           </div>
           <div>
-            <div class="flex justify-center mt-4">
-              <img src="/img/class_warrior.png" alt="Warrior" class="w-10 h-10 m-1 rounded md:w-16 md:h-16" />
-              <img src="/img/class_hunter.png" alt="Hunter" class="w-10 h-10 m-1 rounded md:w-16 md:h-16" />
+            <div class="flex justify-center mt-4" id="sixties">
+
             </div>
           </div>
           <!-- Total Gold -->
@@ -56,8 +60,8 @@
             <div class="flex-grow h-1 mr-4 bg-yellow-400"></div>
 
           </div>
-          <div class="pt-4 mx-auto text-4xl text-center md:text-6xl">
-            7,316,155
+          <div class="pt-4 mx-auto text-4xl text-center md:text-6xl" id="current-gold">
+            
           </div>
           <!-- ATT Progress -->
           <div class="flex items-center mt-8">
@@ -72,7 +76,7 @@
 
           </div>
           <div class="flex pt-8 mx-2">
-            <img src="/img/class_warrior.png" alt="Warrior" class="w-10 h-10 rounded-l md:w-16 md:h-16" />
+            <img src="/img/class_warrior.jpg" alt="Warrior" class="w-10 h-10 rounded-l md:w-16 md:h-16" />
             <div class="flex flex-grow border border-gray-300">
               <div class="flex items-center justify-center text-sm text-center bg-green-300 aat-progress md:text-base"
                 id="warrior">
@@ -81,7 +85,7 @@
           </div>
 
           <div class="flex pt-2 mx-2">
-            <img src="/img/class_hunter.png" alt="Hunter" class="w-10 h-10 rounded-l md:w-16 md:h-16" />
+            <img src="/img/class_hunter.jpg" alt="Hunter" class="w-10 h-10 rounded-l md:w-16 md:h-16" />
             <div class="flex flex-grow border border-gray-300">
               <div class="flex items-center justify-center text-sm text-center bg-green-300 aat-progress md:text-base"
                 id="hunter"></div>
@@ -89,7 +93,7 @@
           </div>
 
           <div class="flex pt-2 mx-2">
-            <img src="/img/class_mage.png" alt="Mage" class="w-10 h-10 rounded-l md:w-16 md:h-16" />
+            <img src="/img/class_mage.jpg" alt="Mage" class="w-10 h-10 rounded-l md:w-16 md:h-16" />
             <div class="flex flex-grow border border-gray-300">
               <div class="flex items-center justify-center text-sm text-center bg-green-300 aat-progress md:text-base"
                 id="mage"></div>
@@ -97,7 +101,7 @@
           </div>
 
           <div class="flex pt-2 mx-2">
-            <img src="/img/class_demonhunter.png" alt="Deom Hunter" class="w-10 h-10 rounded-l md:w-16 md:h-16" />
+            <img src="/img/class_demonhunter.jpg" alt="Deom Hunter" class="w-10 h-10 rounded-l md:w-16 md:h-16" />
             <div class="flex flex-grow border border-gray-300">
               <div class="flex items-center justify-center text-sm text-center bg-green-300 aat-progress md:text-base"
                 id="demonhunter"></div>
@@ -105,7 +109,7 @@
           </div>
 
           <div class="flex pt-2 mx-2">
-            <img src="/img/class_druid.png" alt="Druid" class="w-10 h-10 rounded-l md:w-16 md:h-16" />
+            <img src="/img/class_druid.jpg" alt="Druid" class="w-10 h-10 rounded-l md:w-16 md:h-16" />
             <div class="flex flex-grow border border-gray-300">
               <div class="flex items-center justify-center text-sm text-center bg-green-300 aat-progress md:text-base"
                 id="druid"></div>
@@ -113,7 +117,7 @@
           </div>
 
           <div class="flex pt-2 mx-2">
-            <img src="/img/class_priest.png" alt="Priest" class="w-10 h-10 rounded-l md:w-16 md:h-16" />
+            <img src="/img/class_priest.jpg" alt="Priest" class="w-10 h-10 rounded-l md:w-16 md:h-16" />
             <div class="flex flex-grow border border-gray-300">
               <div class="flex items-center justify-center text-sm text-center bg-green-300 border-r border-gray-300 aat-progress md:text-base"
                 id="priest"></div>
@@ -121,7 +125,7 @@
           </div>
 
           <div class="flex pt-2 mx-2">
-            <img src="/img/class_deathknight.png" alt="Death Knight" class="w-10 h-10 rounded-l md:w-16 md:h-16" />
+            <img src="/img/class_deathknight.jpg" alt="Death Knight" class="w-10 h-10 rounded-l md:w-16 md:h-16" />
             <div class="flex flex-grow border border-gray-300">
               <div class="flex items-center justify-center text-sm text-center bg-green-300 aat-progress md:text-base"
                 id="deathknight"></div>
@@ -129,7 +133,7 @@
           </div>
 
           <div class="flex pt-2 mx-2">
-            <img src="/img/class_paladin.png" alt="Paladint" class="w-10 h-10 rounded-l md:w-16 md:h-16" />
+            <img src="/img/class_paladin.jpg" alt="Paladint" class="w-10 h-10 rounded-l md:w-16 md:h-16" />
             <div class="flex flex-grow border border-gray-300">
               <div class="flex items-center justify-center text-sm text-center bg-green-300 aat-progress md:text-base"
                 id="paladin"></div>
@@ -137,7 +141,7 @@
           </div>
 
           <div class="flex pt-2 mx-2">
-            <img src="/img/class_monk.png" alt="Monk" class="w-10 h-10 rounded-l md:w-16 md:h-16" />
+            <img src="/img/class_monk.jpg" alt="Monk" class="w-10 h-10 rounded-l md:w-16 md:h-16" />
             <div class="flex flex-grow border border-gray-300">
               <div class="flex items-center justify-center text-sm text-center bg-green-300 aat-progress md:text-base"
                 id="monk"></div>
@@ -145,7 +149,7 @@
           </div>
           
           <div class="flex pt-2 mx-2">
-            <img src="/img/class_rogue.png" alt="Rogue" class="w-10 h-10 rounded-l md:w-16 md:h-16" />
+            <img src="/img/class_rogue.jpg" alt="Rogue" class="w-10 h-10 rounded-l md:w-16 md:h-16" />
             <div class="flex flex-grow border border-gray-300">
               <div class="flex items-center justify-center text-sm text-center bg-green-300 aat-progress md:text-base"
                 id="rogue"></div>
@@ -153,7 +157,7 @@
           </div>
 
           <div class="flex pt-2 mx-2">
-            <img src="/img/class_shaman.png" alt="Shaman" class="w-10 h-10 rounded-l md:w-16 md:h-16" />
+            <img src="/img/class_shaman.jpg" alt="Shaman" class="w-10 h-10 rounded-l md:w-16 md:h-16" />
             <div class="flex flex-grow border border-gray-300">
               <div class="flex items-center justify-center text-sm text-center bg-green-300 aat-progress md:text-base"
                 id="shaman"></div>
@@ -161,7 +165,7 @@
           </div>
 
           <div class="flex pt-2 mx-2">
-            <img src="/img/class_warlock.png" alt="Warlock" class="w-10 h-10 rounded-l md:w-16 md:h-16" />
+            <img src="/img/class_warlock.jpg" alt="Warlock" class="w-10 h-10 rounded-l md:w-16 md:h-16" />
             <div class="flex flex-grow border border-gray-300">
               <div class="flex items-center justify-center text-sm text-center bg-green-300 aat-progress md:text-base"
                 id="warlock"></div>
@@ -179,37 +183,38 @@
           <!-- Nav-->
           <div class="flex justify-center my-4">
             <div class="w-8 p-1 mx-1 border border-gray-400 rounded rounded-full">
-              <a href="/archive/1.html" id="first">
+              <div onclick="navigate('first')">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd"
                     d="M15.707 15.707a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 010 1.414zm-6 0a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 1.414L5.414 10l4.293 4.293a1 1 0 010 1.414z"
                     clipRule="evenodd" />
                 </svg>
-              </a>
+              </div>
             </div>
             <div class="w-8 p-1 mx-1 border border-gray-400 rounded rounded-full">
-              <a href="#" id="prev">
+              <div onclick="navigate('prev')">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd"
                     d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
                     clipRule="evenodd" />
                 </svg>
-              </a>
+              </div>
             </div>
 
-            <div class="w-1/5"></div>
+            <div class="w-1/5 text-center" id="page-number">
+            </div>
 
             <div class="w-8 p-1 mx-1 border border-gray-400 rounded rounded-full">
-              <a href="#" id="next">
+              <div onclick="navigate('next')">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd"
                     d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                     clipRule="evenodd" />
                 </svg>
-              </a>
+              </div>
             </div>
             <div class="w-8 p-1 mx-1 border border-gray-400 rounded rounded-full">
-              <a href="/index.html" id="last">
+              <div onclick="navigate('last')">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd"
                     d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
@@ -218,115 +223,16 @@
                     d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
                     clipRule="evenodd" />
                 </svg>
-              </a>
+              </div>
             </div>
           </div>
-          <div class="text-center">Updated Wednesdays - last update 2021-02-03</div>
+          <div class="text-center">Updated Wednesdays - last update <span id="last-update"></span></div>
         </div>
       </div>
 
     </div>
-    <script src="/archive.js"></script>
-    <script>
-      const pageNo = 3;
-
-      if (pageNo > 1) {
-        document.getElementById('prev').href = '/archive/' + (pageNo - 1) + '.html';
-      }
-
-      if (pageNo < archiveCount) {
-        document.getElementById('next').href = '/archive/' + (pageNo + 1) + '.html';
-      } else {
-        document.getElementById('next').href = '/index.html';
-      }
-
-      const progress = {
-        warrior: {
-          colour: '#c79c6e',
-          current: 25298,
-          max: 63451
-        },
-        hunter: {
-          colour: '#abd473',
-          current: 23650,
-          max: 59517
-        },
-        mage: {
-          colour: '#40c7eb',
-          current: 19289,
-          max: 54272
-        },
-        druid: {
-          colour: '#ff7d0a',
-          current: 19474,
-          max: 56133
-        },
-        demonhunter: {
-          colour: '#a330c9',
-          current: 18691,
-          max: 51960
-        },
-        priest: {
-          colour: '#efefef',
-          current: 20443,
-          max: 56655
-        },
-        deathknight: {
-          colour: '#c41f3b',
-          current: 20382,
-          max: 57972
-        },
-        rogue: {
-          colour: '#fff569',
-          current: 18212,
-          max: 53730
-        },
-
-        paladin: {
-          colour: '#f58cba',
-          current: 20714,
-          max: 57652
-        },
-        monk: {
-          colour: '#00ff96',
-          current: 17801,
-          max: 52667
-        },
-        shaman: {
-          colour: '#0070de',
-          current: 19650,
-          max: 56304
-        },
-        warlock: {
-          colour: '#8787ed',
-          current: 17599,
-          max: 51329
-        },
-      };
-
-      let max = 0;
-      let current = 0;
-      for (const wowClass in progress) {
-        const el = document.getElementById(wowClass);
-        const width = progress[wowClass].current / progress[wowClass].max * 100;
-        el.style.width = width.toFixed(2) + "%";
-
-        console.log(progress[wowClass].colour);
-          el.style.backgroundColor = progress[wowClass].colour;
-        
-
-        el.innerHTML = width.toFixed(2) + `%<br>${progress[wowClass].current} / ${progress[wowClass].max}`;
-
-        max += progress[wowClass].max;
-        current += progress[wowClass].current;
-      }
-console.log([current, max])
-      const el = document.getElementById('totals');
-        const width = current / max * 100;
-        el.style.width = width.toFixed(2) + "%";
-
-        el.innerHTML = width.toFixed(2) + `%<br>${current} / ${max}`;
-    </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/app.js"></script>
 </body>
 
 </html>
