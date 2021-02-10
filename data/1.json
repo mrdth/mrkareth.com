@@ -1,6 +1,11 @@
 {
   "lastUpdate": "2021-02-03",
   "gold": "7,316,155",
+  "collections": {
+    "mounts": 0,
+    "pets":0,
+    "toys":0
+  },
   "sixties": [
     "warrior",
     "hunter"

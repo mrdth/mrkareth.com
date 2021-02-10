@@ -1,4 +1,19 @@
-let pageNo = pageCount = 1;
+let pageNo = pageCount = 2;
+
+const classColours = {
+  "warrior": "#c79c6e",
+  "hunter": "#abd473",
+  "mage": "#40c7eb",
+  "demonhunter": "#a330c9",
+  "druid": "#ff7d0a",
+  "priest": "#efefef",
+  "deathknight": "#c41f3b",
+  "paladin": "#f58cba",
+  "monk": "#00ff96",
+  "rogue": "#fff569",
+  "shaman": "#0070de",
+  "warlock": "#8787ed"
+};
 
 const documentReady = (callbackFunction) => {
   if (document.readyState != 'loading')
@@ -30,6 +45,7 @@ const update = (weekNumber) => {
     response => {
       updateSixties(response.data.sixties);
       updateGold(response.data.gold);
+      updateCollections(response.data.collections);
       updateProgress(response.data.progress);
       updateProgressDate(response.data.lastUpdate);
       
@@ -54,9 +70,13 @@ const updateSixties = (list) => {
   })
 }
 
-const updateGold = (value) => {
-  const el = document.getElementById('current-gold');
-  el.innerText = value;
+const updateGold = value => document.getElementById('current-gold').innerText = value;
+
+
+const updateCollections = (collections) => {
+  for (collection in collections) {
+    document.getElementById(collection).innerText = collections[collection];
+  }
 }
 
 const updateProgress = (progress) => {
@@ -69,7 +89,7 @@ const updateProgress = (progress) => {
     const width = progress[wowClass].current / progress[wowClass].max * 100;
     el.style.width = width.toFixed(2) + "%";
 
-    el.style.backgroundColor = progress[wowClass].colour;
+    el.style.backgroundColor = classColours[wowClass];
 
 
     el.innerHTML = width.toFixed(2) + `%<br>${progress[wowClass].current} / ${progress[wowClass].max}`;

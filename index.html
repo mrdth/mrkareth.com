@@ -61,7 +61,44 @@
 
           </div>
           <div class="pt-4 mx-auto text-4xl text-center md:text-6xl" id="current-gold">
-            
+
+          </div>
+
+          <!-- Collections -->
+          <div class="flex flex-col">
+
+            <div class="flex mx-4">
+              <div class="flex flex-col flex-1">
+                <div class="flex items-center mt-8">
+                  <div class="flex-grow h-1 bg-yellow-400"></div>
+                  <div class="px-4 text-2xl leading-4 md:px-8">
+                    MOUNTS
+                  </div>
+                  <div class="flex-grow h-1 bg-yellow-400"></div>
+                </div>
+                <div class="mt-4 text-xl text-center" id="mounts"></div>
+              </div>
+              <div class="flex flex-col flex-1">
+                <div class="flex items-center mt-8">
+                  <div class="flex-grow h-1 bg-yellow-400"></div>
+                  <div class="px-4 text-2xl leading-4 md:px-8">
+                    PETS
+                  </div>
+                  <div class="flex-grow h-1 bg-yellow-400"></div>
+                </div>
+                <div class="mt-4 text-xl text-center" id="pets"></div>
+              </div>
+              <div class="flex flex-col flex-1">
+                <div class="flex items-center mt-8">
+                  <div class="flex-grow h-1 bg-yellow-400"></div>
+                  <div class="px-4 text-2xl leading-4 md:px-8">
+                    TOYS
+                  </div>
+                  <div class="flex-grow h-1 bg-yellow-400"></div>
+                </div>
+                <div class="mt-4 text-xl text-center" id="toys"></div>
+              </div>
+            </div>
           </div>
           <!-- ATT Progress -->
           <div class="flex items-center mt-8">
@@ -119,7 +156,8 @@
           <div class="flex pt-2 mx-2">
             <img src="/img/class_priest.jpg" alt="Priest" class="w-10 h-10 rounded-l md:w-16 md:h-16" />
             <div class="flex flex-grow border border-gray-300">
-              <div class="flex items-center justify-center text-sm text-center bg-green-300 border-r border-gray-300 aat-progress md:text-base"
+              <div
+                class="flex items-center justify-center text-sm text-center bg-green-300 border-r border-gray-300 aat-progress md:text-base"
                 id="priest"></div>
             </div>
           </div>
@@ -147,7 +185,7 @@
                 id="monk"></div>
             </div>
           </div>
-          
+
           <div class="flex pt-2 mx-2">
             <img src="/img/class_rogue.jpg" alt="Rogue" class="w-10 h-10 rounded-l md:w-16 md:h-16" />
             <div class="flex flex-grow border border-gray-300">
@@ -173,7 +211,7 @@
           </div>
 
           <div class="flex pt-6 mx-2">
-            <div class="flex items-center justify-center w-10 h-10 rounded-l md:w-16 md:h-16" >Total</div>
+            <div class="flex items-center justify-center w-10 h-10 rounded-l md:w-16 md:h-16">Total</div>
             <div class="flex flex-grow border border-gray-300">
               <div class="flex items-center justify-center text-sm text-center bg-green-300 aat-progress md:text-base"
                 id="totals"></div>
@@ -182,7 +220,7 @@
 
           <!-- Nav-->
           <div class="flex justify-center my-4">
-            <div class="w-8 p-1 mx-1 border border-gray-400 rounded rounded-full">
+            <div class="w-8 p-1 mx-1 border border-gray-400 rounded rounded-full cursor-pointer">
               <div onclick="navigate('first')">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd"
@@ -191,7 +229,7 @@
                 </svg>
               </div>
             </div>
-            <div class="w-8 p-1 mx-1 border border-gray-400 rounded rounded-full">
+            <div class="w-8 p-1 mx-1 border border-gray-400 rounded rounded-full cursor-pointer">
               <div onclick="navigate('prev')">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd"
@@ -204,7 +242,7 @@
             <div class="w-1/5 text-center" id="page-number">
             </div>
 
-            <div class="w-8 p-1 mx-1 border border-gray-400 rounded rounded-full">
+            <div class="w-8 p-1 mx-1 border border-gray-400 rounded rounded-full cursor-pointer">
               <div onclick="navigate('next')">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd"
@@ -213,7 +251,7 @@
                 </svg>
               </div>
             </div>
-            <div class="w-8 p-1 mx-1 border border-gray-400 rounded rounded-full">
+            <div class="w-8 p-1 mx-1 border border-gray-400 rounded rounded-full cursor-pointer">
               <div onclick="navigate('last')">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd"
