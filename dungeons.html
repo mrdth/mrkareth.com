@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" class="h-screen">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="https://unpkg.com/favicon.ico" />
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography/dist/typography.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/line-clamp/dist/line-clamp.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/aspect-ratio/dist/aspect-ratio.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <style>
+    html {
+      font-family: 'Lato', sans-serif;
+    }
+
+    .aat-progress {
+      width: 0%;
+      /* transition: width .5s; */
+    }
+  </style>
+  <title>MrKareth</title>
+</head>
+
+<body class="h-screen">
+  <div id="app" class="flex items-center justify-center min-h-screen bg-repeat"
+    style="background-image: url('/img/dark-paths.png')">
+    <div class="flex flex-col mx-auto md:w-2/3 xl:w-1/2">
+      <div class="flex items-center ">
+        <div class="flex-grow h-2 bg-yellow-400"></div>
+        <div class="px-4 py-12 text-3xl text-gray-100 md:leading-4 md:text-6xl md:px-8">
+          <a href="/">MrKareth</a>
+        </div>
+        <div class="flex-grow h-2 bg-yellow-400"></div>
+      </div>
+    
+      <div>
+        <ul class="flex border-b">
+          <li class="flex-grow mx-1">
+            <a class="inline-block w-full px-4 py-2 font-semibold text-center text-blue-500 bg-gray-200 border-t border-l border-r rounded-t" href="/">Overview</a>
+          </li>
+          <li class="flex-grow mr-1">
+            <a class="inline-block w-full px-4 py-2 font-semibold text-center text-blue-500 bg-gray-200 border-t border-l border-r rounded-t hover:text-blue-800" href="/att.html">ATT Detail</a>
+          </li>
+          <li class="flex-grow mr-1">
+            <a class="inline-block w-full px-4 py-2 font-semibold text-center text-blue-700 bg-white border-t border-l border-r rounded-t hover:text-blue-800" href="/dungeons.html">Dungeon & Raid Detail</a>
+          </li>
+        </ul>
+        <div class="p-4 pb-1 mx-auto bg-gray-100 border-2 border-yellow-400 md:p-8 md:pb-1">
+
+            <!-- data Table -->
+            <table class="w-full border-collapse">
+                <thead id="table-head">
+
+                </thead>
+                <tbody id="table-body">
+
+                </tbody>
+              </table>
+
+          <!-- Nav-->
+          <div class="flex justify-center my-4">
+            <div class="w-8 p-1 mx-1 border border-gray-400 rounded rounded-full cursor-pointer">
+              <div onclick="navigate('first')">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd"
+                    d="M15.707 15.707a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 010 1.414zm-6 0a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 1.414L5.414 10l4.293 4.293a1 1 0 010 1.414z"
+                    clipRule="evenodd" />
+                </svg>
+              </div>
+            </div>
+            <div class="w-8 p-1 mx-1 border border-gray-400 rounded rounded-full cursor-pointer">
+              <div onclick="navigate('prev')">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd"
+                    d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+                    clipRule="evenodd" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="w-1/5 text-center" id="page-number">
+            </div>
+
+            <div class="w-8 p-1 mx-1 border border-gray-400 rounded rounded-full cursor-pointer">
+              <div onclick="navigate('next')">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd"
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                    clipRule="evenodd" />
+                </svg>
+              </div>
+            </div>
+            <div class="w-8 p-1 mx-1 border border-gray-400 rounded rounded-full cursor-pointer">
+              <div onclick="navigate('last')">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd"
+                    d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
+                    clipRule="evenodd" />
+                  <path fillRule="evenodd"
+                    d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
+                    clipRule="evenodd" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <script src="/papaparse.min.js"></script>
+    <script src="/dungeons.js"></script>
+</body>
+
+</html>
