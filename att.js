@@ -84,10 +84,11 @@ const createRow = (values) => {
 
     for(let key in values)  {
         let cell = document.createElement('td');
-                
         cell.style.backgroundColor = progressColours[Math.floor(values[key] / 10)];
+        cell.classList = 'p-1 border-t border-b border-black'
         
         contents = values[key];
+
         if (key !== "") {
             cell.classList = 'text-center p-1 text-xs border border-black'
             contents = contents + '%';
