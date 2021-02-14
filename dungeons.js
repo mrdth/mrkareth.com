@@ -14,6 +14,18 @@ const progressColours = [
     '#3BE424'
 ];
 
+const expansions = [ 
+  'Classic', 
+  'Burning Crusade', 
+  'Wrath of the Lich King', 
+  'Cataclysm', 
+  'Mists of Pandaria', 
+  'Warlords of Draenor',
+  'Legion',
+  'Battle for Azeroth',
+  'Shadowlands'
+];
+
 const documentReady = (callbackFunction) => {
   if (document.readyState != 'loading')
     callbackFunction(event)
@@ -86,15 +98,19 @@ const createRow = (values) => {
         let cell = document.createElement('td');
         
         contents = values[key];
-        cell.classList = 'p-1 border-t border-b border-black'
+        let classList = 'p-1 border-b border-black bg-indigo-300'
         if (key !== "") {
-          cell.classList = 'text-center p-1 text-xs border border-black'
+          classList = 'text-center p-1 text-xs border border-black'
             contents = contents + '%';
         }
         
+        if ( expansions.indexOf(values[key]) !== -1) {
+          classList += ' font-black text-white bg-indigo-900';
+        }
+
         cell.textContent = contents;
         cell.style.backgroundColor = progressColours[Math.floor(values[key] / 10)];
-
+        cell.classList = classList;
 
         row.appendChild(cell);
     }
@@ -104,7 +120,6 @@ const createRow = (values) => {
 
 const getClassImage = (className) => {
     const img = document.createElement('img');
-    console.log(className.toLowerCase());
     img.src = `/img/class_${className.toLowerCase()}.jpg`;
 
     return img;
