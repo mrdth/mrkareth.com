@@ -21,6 +21,19 @@ const documentReady = (callbackFunction) => {
     document.addEventListener("DOMContentLoaded", callbackFunction)
 }
 
+document.addEventListener("keyup", ev => {
+  switch (ev.key) {
+    case 'ArrowLeft':
+      if (pageNo > 1) pageNo--;
+      break;
+    case 'ArrowRight':
+      if (pageNo < pageCount) pageNo++;
+      break;
+    default:
+  }
+  update(pageNo);
+});
+
 const navigate = (page) => {
   switch (page) {
     case 'first':
