@@ -76,7 +76,7 @@ const updateSixties = (list) => {
 
   list.forEach(wowClass => {
     let node = document.createElement('img');
-    node.src = `/img/class_${wowClass}.jpg`;
+    node.src = `/assets/img/class_${wowClass}.jpg`;
     node.classList.add(...classes);
 
     el.appendChild(node);

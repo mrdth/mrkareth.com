@@ -133,7 +133,7 @@ const createRow = (values) => {
 
 const getClassImage = (className) => {
     const img = document.createElement('img');
-    img.src = `/img/class_${className.toLowerCase()}.jpg`;
+    img.src = `/assets/img/class_${className.toLowerCase()}.jpg`;
 
     return img;
 }
