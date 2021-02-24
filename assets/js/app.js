@@ -1,4 +1,4 @@
-let pageNo = pageCount = 3;
+let pageNo = pageCount = 4;
 
 const classColours = {
   "warrior": "#c79c6e",
