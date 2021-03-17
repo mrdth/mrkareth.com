@@ -1,4 +1,4 @@
-let pageNo = pageCount = 5;
+let pageNo = pageCount = 6;
 
 const progressColours = [
     '#ED1C34',
