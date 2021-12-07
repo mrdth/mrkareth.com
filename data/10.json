@@ -1,0 +1,70 @@
+{
+  "lastUpdate": "2021-12-07",
+  "gold": "10,197,911",
+  "collections": {
+    "mounts": 239,
+    "pets": 210,
+    "toys": 183
+  },
+  "sixties": [
+    "warrior",
+    "hunter",
+    "mage",
+    "druid",
+    "priest",
+    "deathknight",
+    "paladin",
+    "monk"
+
+  ],
+  "progress":  {
+    "warrior": {
+      "current": 25049,
+      "max": 59545
+    },
+    "hunter": {
+      "current": 23266,
+      "max": 55630
+    },
+    "mage": {
+      "current": 18761,
+      "max": 50016
+    },
+    "demonhunter": {
+      "current": 17840,
+      "max": 49297
+    },
+    "druid": {
+      "current": 19551,
+      "max": 51786
+    },
+    "priest": {
+      "current": 19541,
+      "max": 52233
+    },
+    "deathknight": {
+      "current": 20241,
+      "max": 53292
+    },
+    "paladin": {
+      "current": 19959,
+      "max": 53413
+    },
+    "monk": {
+      "current": 18122,
+      "max": 48637
+    },
+    "rogue": {
+      "current": 19176,
+      "max": 51064
+    },
+    "shaman": {
+      "current": 19691,
+      "max": 53574
+    },
+    "warlock": {
+      "current": 18641,
+      "max": 50259
+    }
+  }
+}
