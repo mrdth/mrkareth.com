@@ -9,7 +9,12 @@
   "sixties": [
     "warrior",
     "hunter",
-    "mage"
+    "mage",
+    "druid",
+    "priest",
+    "deathknight",
+    "paladin",
+    "monk"
   ],
   "progress":  {
     "warrior": {
