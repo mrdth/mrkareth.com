@@ -103,7 +103,7 @@ const createRow = (values) => {
         contents = values[key];
 
         if (key !== "") {
-            cell.classList = 'text-center p-1 text-xs border border-black'
+            cell.classList = 'text-center p-1 border border-black'
             contents = contents + '%';
         }
         cell.textContent = contents;

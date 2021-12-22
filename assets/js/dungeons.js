@@ -113,7 +113,7 @@ const createRow = (values) => {
         contents = values[key];
         let classList = 'p-1 border-b border-black bg-indigo-300'
         if (key !== "") {
-          classList = 'text-center p-1 text-xs border border-black'
+          classList = 'text-center p-1 border border-black'
             contents = contents + '%';
         }
         
